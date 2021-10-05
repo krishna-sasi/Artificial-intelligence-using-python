@@ -1,0 +1,11 @@
+f=open("original.txt", "w")
+f.write("ruchil patel")
+f.close()
+file1 = open("original.txt", "r")
+file2 = open("duplicate.txt", "w")
+l = file1.readline()
+while l:
+     file2.write(l.upper())
+     l=file1.readline()
+file1.close()
+file2.close()
